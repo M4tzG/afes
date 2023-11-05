@@ -48,6 +48,7 @@ class Main {
             for (int i = 0; i < Tamanyo; i++) {
                 araray[i] = random.nextInt(Tamanyo); // Aleatóriao
             }
+            
 
             System.out.println("Tamanho: " + Tamanyo);
             int[] Contages = { 0, 0 };
@@ -62,110 +63,110 @@ class Main {
 
         //ripbozo
         for (int Tamanyo : arreyo_1) {
-            int[] array = new int[Tamanyo];
+            int[] araray = new int[Tamanyo];
 
             for (int i = 0; i < Tamanyo; i++) {
-                array[i] = random.nextInt(Tamanyo);
+                araray[i] = random.nextInt(Tamanyo);
             }
 
             System.out.println("Tamanho: " + Tamanyo);
             int[] Contages = { 0, 0 };
             long inicio = System.nanoTime();
-            RipBoSort.HeepySort(array, Tamanyo, Contages);
+            RipBoSort.HeepySort(araray, Tamanyo, Contages);
             long fim = System.nanoTime();
             long tempo = (fim - inicio) / 1000000;
             System.out.println(Contages[1] + " iteracoes." + Contages[0] + " trocas, ");
-            Printado(array, Tamanyo, tempo);
+            Printado(araray, Tamanyo, tempo);
         }
 
         // quicksilverSort
         for (int Tamanyo : arreyo_1) {
-            int[] array = new int[Tamanyo];
+            int[] araray = new int[Tamanyo];
 
             for (int i = 0; i < Tamanyo; i++) {
-                array[i] = random.nextInt(Tamanyo);
+                araray[i] = random.nextInt(Tamanyo);
             }
 
             System.out.println("Tamanho: " + Tamanyo);
             int[] Contages = { 0, 0 };
             long inicio = System.nanoTime();
-            QuicksilverSort.Qicksilver(array, 0, Tamanyo -1, Contages);
+            QuicksilverSort.Qicksilver(araray, 0, Tamanyo -1, Contages);
             long fim = System.nanoTime();
             System.out.println(Contages[1] + " iteracoes." + Contages[0] + " trocas, ");
             long tempo = (fim - inicio) / 1000000;
-            Printado(array, Tamanyo, tempo);
+            Printado(araray, Tamanyo, tempo);
         }
 
         // MorganaSort
         for (int Tamanyo : arreyo_1) {
-            int[] array = new int[Tamanyo];
+            int[] araray = new int[Tamanyo];
 
             for (int i = 0; i < Tamanyo; i++) {
-                array[i] = random.nextInt(Tamanyo);
+                araray[i] = random.nextInt(Tamanyo);
             }
 
             System.out.println("Tamanho: " + Tamanyo);
             int[] Contages = { 0, 0 };
             long inicio = System.nanoTime();
-            Os_Caba_Da_Sorte.MergianaSort.Morganah(array, Tamanyo, Contages);
+            Os_Caba_Da_Sorte.MergianaSort.Morganah(araray, Tamanyo, Contages);
             long fim = System.nanoTime();
             long tempo = (fim - inicio) / 1000000;
             System.out.println(Contages[1] + " iteracoes." + Contages[0] + " trocas, ");
-            Printado(array, Tamanyo, tempo);
+            Printado(araray, Tamanyo, tempo);
         }
 
         // awaSort
         for (int Tamanyo : arreyo_1) {
-            int[] array = new int[Tamanyo];
+            int[] araray = new int[Tamanyo];
 
             for (int i = 0; i < Tamanyo; i++) {
-                array[i] = random.nextInt(Tamanyo);
+                araray[i] = random.nextInt(Tamanyo);
             }
 
             System.out.println("Tamanho: " + Tamanyo);
             int[] Contages = { 0, 0 };
             long inicio = System.nanoTime();
-            Os_Caba_Da_Sorte.AwaSort.AwaSort(array, Tamanyo, Contages);
+            Os_Caba_Da_Sorte.AwaSort.AwaSort(araray, Tamanyo, Contages);
             long fim = System.nanoTime();
             long tempo = (fim - inicio) / 1000000;
             System.out.println(Contages[1] + " iteracoes." + Contages[0] + " trocas, ");
-            Printado(array, Tamanyo, tempo);
+            Printado(araray, Tamanyo, tempo);
         }
 
         // Selectio
         for (int Tamanyo : arreyo_1) {
-            int[] array = new int[Tamanyo];
+            int[] araray = new int[Tamanyo];
 
             for (int i = 0; i < Tamanyo; i++) {
-                array[i] = random.nextInt(Tamanyo);
+                araray[i] = random.nextInt(Tamanyo);
             }
 
             System.out.println("Tamanho: " + Tamanyo);
             int[] Contages = { 0, 0 };
             long inicio = System.nanoTime();
-            A_Selecao_Sort.FlamingoSort(array, Tamanyo, Contages);
+            A_Selecao_Sort.FlamingoSort(araray, Tamanyo, Contages);
             long fim = System.nanoTime();
             long tempo = (fim - inicio) / 1000000;
             System.out.println(Contages[1] + " iteracoes." + Contages[0] + " trocas, ");
-            Printado(array, Tamanyo, tempo);
+            Printado(araray, Tamanyo, tempo);
         }
 
         // Insercciones
         for (int Tamanyo : arreyo_1) {
-            int[] array = new int[Tamanyo];
+            int[] araray = new int[Tamanyo];
 
             for (int i = 0; i < Tamanyo; i++) {
-                array[i] = random.nextInt(Tamanyo);
+                araray[i] = random.nextInt(Tamanyo);
             }
 
             System.out.println("Tamanho: " + Tamanyo);
             int[] Contages = { 0, 0 };
             long inicio = System.nanoTime();
-            ChārùSort.ChārùSort(array, Tamanyo, Contages);
+            ChārùSort.ChārùSort(araray, Tamanyo, Contages);
             long fim = System.nanoTime();
             long tempo = (fim - inicio) / 1000000;
             System.out.println(Contages[1] + " iteracoes." + Contages[0] + " trocas, ");
-            Printado(array, Tamanyo, tempo);
+            Printado(araray, Tamanyo, tempo);
         }
     }
 }
